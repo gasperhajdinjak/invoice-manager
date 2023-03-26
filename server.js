@@ -20,8 +20,8 @@ app.get("/api/invoice", async (req, res) => {
     const response = await axios.get(API);
     res.json(response.data);
   } catch (error) {
-    console.error("Error fetching data from API:", error);
-    res.status(500).json({ error: "An error occurred while fetching the data." });
+    console.error("Error v API-ju:", error);
+    res.status(500).json({ error: "Prišlo je do napakee" });
   }
 });
 
@@ -35,10 +35,10 @@ app.post("/api/update-invoice", async (req, res) => {
         "Content-Type": "application/json",
       },
     });
-    res.status(200).json({ message: "Invoice updated successfully" });
+    res.status(200).json({ message: "Success" });
   } catch (error) {
     console.error("Error updating invoice:", error);
-    res.status(500).json({ error: "An error occurred while updating the invoice." });
+    res.status(500).json({ error: "Error" });
   }
 });
 
