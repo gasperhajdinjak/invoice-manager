@@ -12,4 +12,4 @@ Navodila za zagon:
 
 ## 5. "npm start" za zagon aplikacije
 
-Opomba: Zgodovina računov se iz nekega razloga ne generira v "Brave" brskalniku, vendaer pa deluje v Firefox-u in Chrome-u. 
+Opomba: Zgodovina računov se iz nekega razloga ne zrendra v "Brave" brskalniku, vendaer pa deluje v Firefox-u in Chrome-u. 
