@@ -4,11 +4,11 @@ Navodila za zagon:
 
 ## 1. Kloniranje repozatorija
 
-## 2. V terminalu prosim navigirajte v "src" folder projekta
+## 2. V terminalu prosim navigirajte v project folder
 
 ## 3. "npm install"
 
-## 4. "node server.js" za zagon serverja
+## 4. v terminalu prosim navigirajte v "src" folder projekta: "node server.js" za zagon serverja
 
 ## 5. "npm start" v novem terminalu za zagon aplikacije
 
