@@ -20,7 +20,7 @@ Aplikacija bi morala biti vidna na portu:3000
 ### Na domači strani se prikaže trenutni račun klican iz API-ja
 ### s klikom na gumb "uredi račun" lahko spremenimo katerikoli podatek v računu. 
 ### Gumb "zgodovina računov" zrendra vse potrjene račune pod našim trenutnim računom, ki so shranjeni v local storage. Če še nimamo računov v local storage, mora javit "nimate preteklih računov". (Ko shranimo nov račun, moramo najprej osvežiti stran in ponovno pritisniti "zgodovina računov", da se ta račun prikaže pod preteklimi računi.)
-### Če kliknemo na katerikoli pretekli račun, bo ta račun nadomestil trenutni račun
+### Če kliknemo na katerikoli pretekli račun, bo ta račun nadomestil trenutni račun na domači strani
 ### Z gumbom "potrdi"pošljem račun na local storage in pa hkrati nazaj na server
 
 
