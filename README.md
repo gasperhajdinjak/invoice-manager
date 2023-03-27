@@ -25,4 +25,4 @@ Aplikacija bi morala biti vidna na portu:3000
 
 
 
-Opomba: Zgodovina računov se iz nekega razloga ne zrendra v "Brave" brskalniku, vendaer pa deluje v Firefox-u in Chrome-u. 
+Opomba: Zgodovina računov se iz nekega razloga ne zrendra v "Brave" brskalniku, vendar pa deluje v Firefox-u in Chrome-u. 
