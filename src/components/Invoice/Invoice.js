@@ -6,7 +6,7 @@ import InvoiceDetails from './InvoiceDetails';
 import InvoiceFooter from './InvoiceFooter';
 import InvoiceTax from './InvoiceTax';
 
-import 'daisyui/dist/full.css';
+
 
 
 const UPDATE_INVOICE_URL = "http://localhost:5000/api/update-invoice";
