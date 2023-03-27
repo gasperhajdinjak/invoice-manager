@@ -1,5 +1,5 @@
 
-# invoice-generator
+# invoice-manager
 
 Navodila za zagon:
 
