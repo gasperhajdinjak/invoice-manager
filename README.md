@@ -10,6 +10,10 @@ Navodila za zagon:
 
 ## 4. "node server.js" za zagon serverja
 
-## 5. "npm start" za zagon aplikacije
+## 5. "npm start" v novem terminalu za zagon aplikacije
+
+Aplikacija bi morala biti vidna na portu:3000
+
+
 
 Opomba: Zgodovina računov se iz nekega razloga ne zrendra v "Brave" brskalniku, vendaer pa deluje v Firefox-u in Chrome-u. 
