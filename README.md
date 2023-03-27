@@ -3,9 +3,9 @@
 
 Navodila za zagon:
 
-## 1. Kloniranje repozatorija
+## 1. Kloniranje repozatorija 
 
-## 2. V terminalu prosim navigirajte v project folder
+## 2. V terminalu prosim navigirajte v project root folder (invoice-manager-main)
 
 ## 3. "npm install"
 
