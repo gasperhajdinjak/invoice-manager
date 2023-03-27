@@ -9,9 +9,13 @@ Navodila za zagon:
 
 ## 3. "npm install"
 
-## 4. v terminalu prosim navigirajte v "src" folder projekta: "node server.js" za zagon serverja
+## 4. v terminalu prosim navigirajte v "src" folder projekta. 
 
-## 5. "npm start" v novem terminalu za zagon aplikacije
+## 5. "node server.js" za zagon serverja
+
+## 6. Odprite nov terminal 
+
+## 7. "npm start" v novem terminalu za zagon aplikacije
 
 Aplikacija bi morala biti vidna na portu:3000
 
