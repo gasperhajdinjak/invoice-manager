@@ -6,6 +6,8 @@ import InvoiceDetails from './InvoiceDetails';
 import InvoiceFooter from './InvoiceFooter';
 import InvoiceTax from './InvoiceTax';
 
+import 'daisyui/dist/full.css';
+
 
 const UPDATE_INVOICE_URL = "http://localhost:5000/api/update-invoice";
 
@@ -110,15 +112,7 @@ const fetchInvoice = async () => {
 
 
 
-
-
-
-
-
-
-
-
-  const editToggle = () => {
+const editToggle = () => {
     setIsEditing(!isEditing);
   };
 
@@ -131,7 +125,7 @@ const makeInputEditable = (element, inputField, index) => {
 
   const inputs = {
     type: "text",
-    className: "bg-white border border-gray-300 rounded p-2 text-gray-700",
+    className: "bg-white border border-gray-200 rounded p-3 text-gray-600",
     onChange: (e) => {
       if (inputField === "a" || inputField === "b" || inputField === "c") {
         handleItemChange(index, inputField, e.target.value);
@@ -234,45 +228,44 @@ const handleSave = async () => {
 
 
 
-return (
-  <div className="container mx-auto px-4 py-8">
-    {data ? (
-      <>
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <InvoiceHeader data={data} isEditing={isEditing} makeInputEditable={makeInputEditable}   handleChangesInHeader={handleChangesInHeader} />
-          <InvoiceDetails updatedData={updatedData} isEditing={isEditing} makeInputEditable={makeInputEditable} />
-          <InvoiceItems data={data} isEditing={isEditing} makeInputEditable={makeInputEditable} />
-          <InvoiceTax data={updatedData} isEditing={isEditing} makeInputEditable={makeInputEditable}/>
-         
-          <InvoiceFooter data={data} isEditing={isEditing} makeInputEditable={makeInputEditable} />
-        </div>
-        <button
-          onClick={handleClick}
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4"
-        >
-          {isEditing ? "Shrani" : "Uredi Račun"}
-        </button>
-        <button
-          onClick={handleInvoiceHistoryClick}
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 ml-4"
-        >
-          {showPreviousInvoices ? "Skrij" : "Zgodovina Računov"}
-        </button>
-        <button
-  onClick={handleConfirmClick}
-  className="bg-green-500 text-white px-4 py-2 rounded-lg mt-4 ml-4"
->
-  Potrdi
-</button>
-
-        {showPreviousInvoices && <PreviousInvoices onInvoiceClick={handleInvoiceClick} />}
-      </>
-    ) : (
-      <p>Loading...</p>
-    )}
-  </div>
-);
-
+ return (
+    <div className="container mx-auto px-4 py-8">
+      {data ? (
+        <>
+          <div className="bg-white p-6 rounded-lg shadow-md border-double border-4 border-gray-300">
+            <InvoiceHeader data={data} isEditing={isEditing} makeInputEditable={makeInputEditable} handleChangesInHeader={handleChangesInHeader} />
+            <InvoiceDetails updatedData={updatedData} isEditing={isEditing} makeInputEditable={makeInputEditable} />
+            <InvoiceItems data={data} isEditing={isEditing} makeInputEditable={makeInputEditable} />
+            <InvoiceTax data={updatedData} isEditing={isEditing} makeInputEditable={makeInputEditable}/>
+            <InvoiceFooter data={data} isEditing={isEditing} makeInputEditable={makeInputEditable} />
+          </div>
+          <div className="flex justify-between mt-4 space-x-4">
+            <button
+              onClick={handleClick}
+              className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-lg transform hover:scale-110 duration-200"
+            >
+              {isEditing ? "Shrani" : "Uredi Račun"}
+            </button>
+            <button
+              onClick={handleInvoiceHistoryClick}
+              className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-lg transform hover:scale-110 duration-200"
+            >
+              {showPreviousInvoices ? "Skrij" : "Zgodovina Računov"}
+            </button>
+            <button
+              onClick={handleConfirmClick}
+              className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white px-4 py-2 rounded-lg transform hover:scale-110 duration-200"
+            >
+              Potrdi
+            </button>
+          </div>
+          {showPreviousInvoices && <PreviousInvoices onInvoiceClick={handleInvoiceClick} />}
+        </>
+      ) : (
+        <p className="text-lg font-semibold text-gray-600">Loading...</p>
+      )}
+    </div>
+  );
 };
 
 export default Invoice;

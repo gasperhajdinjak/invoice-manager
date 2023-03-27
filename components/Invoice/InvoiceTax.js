@@ -19,10 +19,10 @@ const InvoiceTax = ({data}) => {
 
   return (
     <div className="mb-4">
-            <h4>Za Plačilo: {getTotalValue(data).toFixed(1)}</h4>
-            <h4>Davčna Stopnja (%): 9.5</h4>
-            <h4>Neto Vrednost: {getNetValue(data).toFixed(1)}</h4>
-            <h4>Bruto Vrednost: {getTotalValue(data).toFixed(1)}</h4>
+            <h4 className="font-semibold">Za Plačilo EUR: {getTotalValue(data).toFixed(1)}</h4>
+            <h4 className="font-semibold">Davčna Stopnja (%): 9.5</h4>
+            <h4 className="font-semibold">Neto Vrednost: {getNetValue(data).toFixed(1)}</h4>
+            <h4 className="font-semibold">Bruto Vrednost: {getTotalValue(data).toFixed(1)}</h4>
           </div>
   );
 }

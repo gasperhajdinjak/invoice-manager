@@ -4,7 +4,7 @@ const InvoiceDetails = ({ updatedData, isEditing, makeInputEditable }) => {
   }
 
   return (
-    <div className="mb-4">
+    <div className="mb-6 mt-6">
    <h4>Številka računa: {makeInputEditable(updatedData.c, "c")}</h4>
 <h4>Prodajalec: {makeInputEditable(updatedData.b, "b")}</h4>
 <h4>Datum izdaje računa: {makeInputEditable(updatedData.d, "d")}</h4>
